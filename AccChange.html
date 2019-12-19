@@ -16,25 +16,24 @@
         <main>
             <div class="container" style="background:#fac202">
                 <section>
-                    <h1>Header</h1>
-                    <p>Wrap Banner image with <code>&lt;header aria-label=&quot;section banner&quot;&gt;&lt;/header&gt;</code></p>
-                    <p>Wrap <code>&lt;div id=&quot;scrollable_top&quot;&gt;&lt;/div&gt;</code> with <code>&lt;nav aria-label='interactive toolbar'&gt;&lt;/nav&gt;</code></p>
+                    <h1>Banner & Tool bar</h1>
+                    <p>copy <code>alt="Module 13 Banner"</code> from <code>OLD</code> and replace <code>white space</code> to <code>-</code></p>
+                    <p>put it in <code>sectiontitle="Module-13-Banner"</code> in <code>&lt;header&gt;</code></p>
                 </section>
                 <section>
                     <div class="row justify-content-center">
                         <div class="col-12">
 <figure>
 <figcaption>Old</figcaption>
-<pre><code contenteditable="false" tabindex="0" spellcheck="false">&lt;body&gt;
-&lt;div class=&quot;container&quot; page=&quot;wdc01&quot; id=&quot;content_container&quot;&gt;
-    &lt;header&gt;
-        &lt;div class=&quot;primary_header&quot;&gt;
-            &lt;img src=&quot;https://s3.amazonaws.com/upenn-wdp/images/banners/ScentDetection.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Introduction to Scent Detection Dogs Module Banner&quot;&gt; &lt;/div&gt;
-        &lt;div id=&quot;scrollable_top&quot;&gt;
-            &lt;div id=&quot;left&quot;&gt;&lt;/div&gt;
-            &lt;div id=&quot;right&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/header&gt;
+<pre><code contenteditable="false" tabindex="0" spellcheck="false">&lt;header&gt;
+    &lt;div class=&quot;primary_header&quot;&gt;
+        &lt;img src=&quot;https://s3.amazonaws.com/upenn-wdp/images/banners/Genetics.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Module 13 Banner&quot;&gt;    
+    &lt;/div&gt;
+	&lt;div id=&quot;scrollable_top&quot;&gt;
+        &lt;div id=&quot;left&quot; &gt;&lt;/div&gt; 
+        &lt;div id=&quot;right&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/header&gt;
 </code></pre>
 </figure>
                         </div>
@@ -51,20 +50,8 @@
                         <div class="col-12">
 <figure>
 <figcaption class="figcaption-light">New</figcaption>
-<pre><code contenteditable="false" tabindex="0" spellcheck="false">&lt;body&gt;
-&lt;div class=&quot;container&quot; page=&quot;wdc01&quot; id=&quot;content_container&quot;&gt;
-    &lt;header aria-label=&quot;section banner&quot;&gt;
-        &lt;div class=&quot;primary_header&quot;&gt;
-            &lt;img src=&quot;https://s3.amazonaws.com/upenn-wdp/images/banners/ScentDetection.jpg&quot; class=&quot;img-responsive&quot;
-                alt=&quot;Introduction to Scent Detection Dogs Module Banner&quot;&gt; 
-        &lt;/div&gt;
-    &lt;/header&gt;
-    &lt;nav aria-label='interactive toolbar'&gt;
-        &lt;div id=&quot;scrollable_top&quot;&gt;
-            &lt;div id=&quot;left&quot;&gt;&lt;/div&gt;
-            &lt;div id=&quot;right&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/nav&gt;
+<pre><code contenteditable="false" tabindex="0" spellcheck="false">&lt;header id=&quot;header-banner&quot; sectiontitle=&quot;Module-13-Banner&quot; &gt;&lt;/header&gt;
+&lt;nav id=&quot;study-tools-nav&quot;&gt;&lt;/nav&gt;
 </code></pre>
 </figure>
                         </div>
@@ -72,77 +59,6 @@
                 </section>
             </div>
 <div class="spacer"></div>
-            <div class="container" style="background:#fac202">
-                    <section>
-                        <h1>Header</h1>
-                        <p>Wrap <code>&lt;section&gt; &lt;/section&gt;</code> with <code>&lt;main aria-label=&quot;lesson content&quot; class=&quot;main-content&quot; &gt; &lt;/main&gt;</code></p>
-                    </section>
-                    <section>
-                        <div class="row justify-content-center">
-                            <div class="col-12">
-    <figure>
-    <figcaption>Old</figcaption>
-    <pre><code contenteditable="false" tabindex="0" spellcheck="false">&lt;section class=&quot;pcontainer&quot;&gt;
-    &lt;h2 class=&quot;header2&quot; style=&quot;margin-right: 0px;&quot;&gt;The Reward System &lt;br&gt;
-    &lt;/h2&gt;
-    &lt;p class=&quot;p2&quot;&gt;Dogs like people need to be &ldquo;paid&rdquo; for their work! 
-    The jobs we ask dogs to perform can be challenging and potentially hazardous, ....&lt;/p&gt;
-
-    &lt;img src=&quot;https://s3.amazonaws.com/upenn-wdp/images/VideoReferenceIcon.png&quot; alt=&quot;Video link icon&quot; width=&quot;57&quot; height=&quot;41&quot;&gt;
-    &lt;a href=&quot;JavaScript:newPopup('https://youtu.be/JLH8WHyaNFo');&quot;&gt;Food Reward&lt;/a&gt;&lt;img src=&quot;https://s3.amazonaws.com/u.png&quot; 
-    alt=&quot;Video link bracket&quot; width=&quot;16&quot; height=&quot;41&quot;&gt;
-&lt;/section&gt;
-
-&lt;div class=&quot;pcontainer-wrap container&quot;&gt;
-    &lt;div class=&quot;container&quot; id=&quot;pageButtons&quot;&gt; &lt;/div&gt;
-    &lt;div class=&quot;columns&quot;&gt; &lt;/div&gt;
-&lt;/div&gt;
-.
-.
-.
-&lt;footer class=&quot;secondary_header footer&quot;&gt;
-    &lt;div class=&quot;copyright&quot;&gt;PennVet Working Dog Center | 3401 Grays Ferry Avenue, Philadelphia PA 19146 | Phone: 215-898-2200 | Fax: 215-463-3870 Email: workingdoginfo@pennvetwdc.org&lt;br&gt;
-    &lt;/div&gt;
-&lt;/footer&gt;
-    </code></pre>
-    </figure>
-                            </div>
-                            <div class="floating">
-                                <svg id="arrow" x="0px" y="0px"
-                                    viewBox="0 0 86.001 86.001" style="enable-background:new 0 0 86.001 86.001;" xml:space="preserve">
-                                    <g>
-                                        <path style="fill:#111;" d="M5.907,21.004c-1.352-1.338-3.542-1.338-4.894,0c-1.35,1.336-1.352,3.506,0,4.844l39.54,39.15
-                                            c1.352,1.338,3.542,1.338,4.894,0l39.54-39.15c1.351-1.338,1.352-3.506,0-4.844c-1.352-1.338-3.542-1.338-4.894-0.002L43,56.707
-                                            L5.907,21.004z"/>
-                                    </g>
-                               </svg>
-                           </div>
-                            <div class="col-12">
-    <figure>
-    <figcaption class="figcaption-light">New</figcaption>
-    <pre><code contenteditable="false" tabindex="0" spellcheck="false">&lt;main aria-label=&quot;lesson content&quot; class=&quot;main-content&quot; &gt;
-    &lt;section class=&quot;pcontainer&quot;&gt;
-        &lt;h1 class=&quot;header1_fullWidth&quot;&gt;SECTION 2: HOW SCENT DETECTION DOGS DIFFER FROM PET DOGS&lt;/h1&gt;
-    &lt;/section&gt;
-
-
-    &lt;section class=&quot;pcontainer&quot;&gt;
-        &lt;!-- photo with caption &amp; credit --&gt;
-        &lt;div class=&quot;photo_credit_container2&quot; style=&quot;margin-top:50px;&quot;&gt;
-.
-.
-.
-&lt;/main&gt;
-&lt;footer class=&quot;secondary_header footer&quot;&gt;
-    &lt;div class=&quot;copyright&quot;&gt;PennVet Working Dog Center | 3401 Grays Ferry Avenue, Philadelphia PA 19146 | Phone: 215-898-2200 | Fax: 215-463-3870 Email: workingdoginfo@pennvetwdc.org&lt;br&gt;
-    &lt;/div&gt;
-&lt;/footer&gt;
-    </code></pre>
-    </figure>
-                            </div>
-                        </div>
-                    </section>
-                </div>
         </main>
 
 
