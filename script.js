@@ -46,15 +46,35 @@
 	})();
 
 
-	document.getElementById('old-html-1').innerHTML = `
-	<body>
-<div class="container" page="wdc01" id="content_container">
-    <header>
-        <div class="primary_header">
-            <img src="https://s3.amazonaws.com/upenn-wdp/images/banners/ScentDetection.jpg" class="img-responsive" alt="Introduction to Scent Detection Dogs Module Banner"> </div>
-        <div id="scrollable_top">
-            <div id="left"></div>
-            <div id="right"></div>
-        </div>
-    </header>
-	`;
+// converter
+$('#convert').click(function() {
+	//hide previous results - if shown
+  $('.spit').hide(); 
+	$('.confirm').hide();
+	
+
+	let input = $('input').val();
+	let newText = (input.replace(/ /g, '-'));
+	$('.spit').css('border-top','solid 4px #0F4C81');
+
+    // show result div
+		$('.spit').show(); 
+		
+	$('.spit').html('<span class="result" id="myResult" >'+ newText +'</span>');
+	$('.spit').append('<br><button class="copy" onclick="copyFunc()" style="margin-top:20px;">copy value</button><div class="confirm"></div>');
+});
+
+// show 'value copied' div when copy button is clicked
+copyFunc = () => {
+	copyToClipboard('#myResult')
+	$('.confirm').html('<strong style="color:#fff;font-weight:bolder;">Copied!</strong> ').show();
+};
+
+// copy to clipboard
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
