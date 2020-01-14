@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WDC Able Player Video Demo</title>
+
+    <link rel="icon"
+        href="https://www.clipartmax.com/png/middle/335-3350234_apples-icon-for-accessibility-the-vitruvian-man-question-mark.png"
+        sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Able Player CSS -->
+    <link rel="stylesheet" href="https://secure.c4edu.mobi/includes/UPenn/WDC/css/wdc-ableplayer.css" type="text/css" />
+
+
+<style>
+.videos-container {
+    background: #e0dcda;
+    padding-bottom: 55px;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro-tab-body {
+    margin-top: 20px;
+    font-size: 18px;
+    background: none;
+}
+h1 {
+    color: white;
+    font-weight: bolder;
+}
+.container {
+    background: none;
+}
+.mb {
+    margin-bottom: 50px;
+}
+p {
+    color: black;
+}
+.p-indent {
+    text-indent: 50px;
+}
+</style>
+</head>
+
+<body>
+
+    <!-- use the following markup for each media element -->
+    <div class="container mb">
+        <h1>Intro Page</h1>
+    <section class="videos-container">
+        <!-- VIDEO begin -->
+        <div class="wdc-ableplayer-intro">
+            <div>
+                <video id="mod1_intro_video" preload="auto" width="650" height="488"
+                    poster="https://s3.amazonaws.com/upenn-wdp/images/mod1_intro_video.jpg" data-able-player
+                    data-skin="2020" playsinline>
+                    <source type="video/mp4" src="https://s3.amazonaws.com/upenn-wdp/video/scent_detection.mp4" />
+                    <track kind="captions" src="https://s3.amazonaws.com/upenn-wdp/video/m1_cc.vtt" srclang="en"
+                        label="English captions" />
+                </video>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <p class="intro-tab-body"><strong>Module 1 Introduction</strong>
+                <br />Click the play button to view the video.
+            </p>
+        </div>
+    </section>
+</div>
+
+
+
+<div class="container" style="background:#fac202">
+    <section>
+        <div class="row justify-content-center">
+            <div class="col-12">
+<figure>
+<figcaption>Old</figcaption>
+<pre><code contenteditable="false" tabindex="0" spellcheck="false">&lt;section id=&quot;&quot; class=&quot;videos-container&quot;&gt;
+    &lt;div class=&quot;videos-box&quot;&gt;
+        &lt;div id=&quot;intro_video&quot;&gt;Loading the player...&lt;/div&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            jwplayer(&quot;intro_video&quot;).setup({
+                sources: [{
+                    &quot;file&quot;: &quot;https://s3.amazonaws.com/upenn-wdp/video/scent_detection.mp4&quot;
+                }],
+                image: &quot;https://s3.amazonaws.com/upenn-wdp/images/mod1_intro_video.jpg&quot;,
+                width: &quot;100%&quot;,
+                abouttext: &quot;PennVet Working Dog Program&quot;,
+                aboutlink: &quot;https://workingdogpractitioner.com/&quot;,
+                tracks: [{
+                    file: &quot; https://s3.amazonaws.com/upenn-wdp/video/m1_cc.vtt &quot;,
+                    label: &quot;English&quot;,
+                    kind: &quot;captions&quot;,
+                    &quot;default&quot;: true
+                }],
+            });
+        &lt;/script&gt;
+        &lt;div style=&quot;text-align: center;&quot;&gt;
+            &lt;p class=&quot;intro-tab-body&quot;&gt;&lt;strong&gt;Module 1 Introduction&lt;/strong&gt;
+                &lt;br /&gt;Click the play button to view the video.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+</figure>
+            </div>
+            <div class="floating">
+                <svg id="arrow" x="0px" y="0px"
+                    viewBox="0 0 86.001 86.001" style="enable-background:new 0 0 86.001 86.001;" xml:space="preserve">
+                    <g>
+                        <path style="fill:#111;" d="M5.907,21.004c-1.352-1.338-3.542-1.338-4.894,0c-1.35,1.336-1.352,3.506,0,4.844l39.54,39.15
+                            c1.352,1.338,3.542,1.338,4.894,0l39.54-39.15c1.351-1.338,1.352-3.506,0-4.844c-1.352-1.338-3.542-1.338-4.894-0.002L43,56.707
+                            L5.907,21.004z"/>
+                    </g>
+               </svg>
+           </div>
+            <div class="col-12">
+<figure>
+<figcaption class="figcaption-light">New</figcaption>
+<p>&lt;video id=<code>use image file name</code></p>
+<p>poster="<code>Copy and Paste image file path"</code></p>
+<p>&lt;source src="<code>Copy and Paste video file path</code></p>
+<p>&lt;track src="<code>Copy and Paste caption file path</code></p>
+
+<pre><code contenteditable="false" tabindex="0" spellcheck="false">&lt;section class=&quot;videos-container&quot;&gt;
+    &lt;div class=&quot;wdc-ableplayer-intro&quot;&gt;
+        &lt;div&gt;
+            &lt;video id=&quot;mod1_intro_video&quot; preload=&quot;auto&quot; width=&quot;650&quot; height=&quot;488&quot;
+                poster=&quot;https://s3.amazonaws.com/upenn-wdp/images/mod1_intro_video.jpg&quot; data-able-player
+                data-skin=&quot;2020&quot; playsinline&gt;
+                &lt;source type=&quot;video/mp4&quot; src=&quot;https://s3.amazonaws.com/upenn-wdp/video/scent_detection.mp4&quot; /&gt;
+                &lt;track kind=&quot;captions&quot; src=&quot;https://s3.amazonaws.com/upenn-wdp/video/m1_cc.vtt&quot; srclang=&quot;en&quot;
+                    label=&quot;English captions&quot; /&gt;
+            &lt;/video&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;text-align: center;&quot;&gt;
+        &lt;p class=&quot;intro-tab-body&quot;&gt;&lt;strong&gt;Module 1 Introduction&lt;/strong&gt;
+            &lt;br /&gt;Click the play button to view the video.
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+</figure>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="spacer"></div>
+
+
+<div class="container-fluid" style="background: white; padding-bottom: 20px;">
+<div class="container mb">
+    <h1 style="color:black">Content Page</h1>
+
+    <div class="wdc-ableplayer">
+        <h2 class="header2">DETECTING EXPLOSIVES: 3 VIDEOS</h2>
+        <h3>Pierce and Pearl Explosives</h3>
+        <p style="font-weight: normal; font-size: 18px;">Training an explosives detection dog, using a passive alert (sit) and a clicker to mark the correct behavior. Food reward is used in this training session.</p>
+        <div class="wrapper">
+          <video id="itvX6OKJxkA" data-able-player data-skin="2020" preload="auto" data-youtube-id="itvX6OKJxkA" >
+          </video>
+        </div> 
+     
+        <p style="font-weight: normal; font-size: 18px;">Follow a TSA Passenger Screening Explosives Detection Canine through a training exercise where they detect an explosive device in the back pack of a passenger.</p>
+        <div class="wrapper">
+            <video id="Ywe-5AvggvM" data-able-player data-skin="2020" preload="auto" data-youtube-id="Ywe-5AvggvM" >
+            </video>
+        </div> 
+     
+    </div>
+</div>
+</div>
+
+
+
+<div class="container" style="background:#fac202; margin-top: 30px;">
+    <section>
+        <div class="row justify-content-center">
+            
+            <div class="col-12">
+<figure>
+<figcaption class="figcaption-light">New</figcaption>
+<p>Copy and Paste Youtube V-id</p>
+<p class="p-indent">&lt;video id="<code>Youtube V-id here</code>"</p>
+<p class="p-indent">data-youtube-id="<code>Youtube V-id here</code>"</p>
+<pre><code contenteditable="false" tabindex="0" spellcheck="false">&lt;div class=&quot;wdc-ableplayer&quot;&gt;
+    &lt;!-- First Video, Title --&gt;
+    &lt;h2 class=&quot;header2&quot;&gt;DETECTING EXPLOSIVES: 3 VIDEOS&lt;/h2&gt;
+    &lt;h3&gt;Pierce and Pearl Explosives&lt;/h3&gt;
+    &lt;p&gt;Training an explosives detection dog, using a passive alert (sit) and a clicker to mark the correct behavior. Food reward is used in this training session.&lt;/p&gt;
+    &lt;div class=&quot;wrapper&quot;&gt;
+        &lt;video id=&quot;itvX6OKJxkA&quot; data-able-player data-skin=&quot;2020&quot; preload=&quot;auto&quot; data-youtube-id=&quot;itvX6OKJxkA&quot; &gt;
+        &lt;/video&gt;
+    &lt;/div&gt; 
+    
+    &lt;!-- Second Video, No Title --&gt;
+    &lt;p&gt;Follow a TSA Passenger Screening Explosives Detection Canine through a training exercise where they detect an explosive device in the back pack of a passenger.&lt;/p&gt;
+    &lt;div class=&quot;wrapper&quot;&gt;
+        &lt;video id=&quot;Ywe-5AvggvM&quot; data-able-player data-skin=&quot;2020&quot; preload=&quot;auto&quot; data-youtube-id=&quot;Ywe-5AvggvM&quot; &gt;
+        &lt;/video&gt;
+    &lt;/div&gt; 
+    
+&lt;/div&gt;
+</code></pre>
+</figure>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="spacer"></div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+    <script src="script.js"></script>
+
+    <!-- Able Player JavaScript -->
+    <script src="https://ableplayer.github.io/ableplayer/thirdparty/js.cookie.js"></script>
+    <script src="https://secure.c4edu.mobi/includes/UPenn/WDC/js/wdc-ableplayer.js"></script>
+
+</body>
+
+</html>
